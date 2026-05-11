@@ -44,20 +44,12 @@ export default function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="bg-accent p-2 rounded-sm">
-             <span className="font-lexend font-bold text-white text-xl tracking-tighter">V</span>
-          </div>
-          <div className="flex flex-col">
-            <span className={cn(
-              "font-lexend font-bold text-lg leading-tight uppercase tracking-widest",
-              isScrolled ? "text-anthracite" : "text-white"
-            )}>Verhulst</span>
-            <span className={cn(
-              "text-[10px] font-medium uppercase tracking-[0.2em]",
-              isScrolled ? "text-muted-foreground" : "text-white/80"
-            )}>Grond- en Betonwerken</span>
-          </div>
+        <Link href="/" className="flex items-center gap-4">
+          <img
+            src={isScrolled ? "/logo.png" : "/logo-white.png"}
+            alt="Verhulst Grond- en Betonwerken"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}

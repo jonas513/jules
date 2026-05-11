@@ -12,7 +12,7 @@ export default function BetonwerkenPage() {
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
             src="https://www.grondwerkenverhulst.be/files/banner/1/10/20240826095134_d.jpg"
-            alt="Betonwerken"
+            alt="Betonwerken Verhulst"
             className="w-full h-full object-cover"
           />
         </div>
@@ -22,64 +22,76 @@ export default function BetonwerkenPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Expertise</span>
-            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Betonwerken</h1>
+            <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Gespecialiseerde Technieken</span>
+            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Hoogwaardige Betonwerken</h1>
           </motion.div>
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 lg:py-32">
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div className="order-2 lg:order-1 bg-muted p-4">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-2 lg:order-1 bg-muted p-4 shadow-sm"
+            >
                <img
                  src="https://www.grondwerkenverhulst.be/files/page/26/8/afbeelding-van-whatsapp-op-2024-06-12-om-22051950e76006.jpg"
-                 alt="Betonwerken in uitvoering"
+                 alt="Betonwerken uitvoering"
                  className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
                />
-            </div>
+            </motion.div>
 
-            <div className="order-1 lg:order-2">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="order-1 lg:order-2"
+            >
               <h2 className="text-3xl md:text-5xl uppercase tracking-tighter text-anthracite mb-8">
-                Onverwoestbare <br /><span className="text-accent">Constructies</span>
+                Duurzaamheid in <br /><span className="text-accent">Elk Detail</span>
               </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Beton is het fundament van de moderne bouw. Bij Verhulst combineren we jarenlange expertise met de hoogste kwaliteitsnormen om betonwerken te leveren die generaties lang meegaan.
+                  Beton vormt de ruggengraat van moderne infrastructuur. Bij Verhulst combineren we vakkennis met een passie voor kwaliteit om betonconstructies te realiseren die voldoen aan de strengste technische eisen. Wij garanderen een structurele integriteit die de tand des tijds doorstaat.
                 </p>
                 <p>
-                  Van industriële funderingsplaten tot complexe betonnen wanden en vloeren: wij zorgen voor een perfecte uitvoering en een onberispelijke afwerking. Onze focus op precisie garandeert dat elk element voldoet aan de structurele vereisten van uw project.
+                  Van gepolierde industriële vloeren tot complexe gewapende betonconstructies en wanden: onze aanpak is altijd resultaatgericht. Met oog voor detail en een efficiënte planning zorgen we voor een vlekkeloze integratie binnen uw totaalproject.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
                 {[
                   "Industriële betonvloeren",
-                  "Funderingsplaten",
-                  "Betonnen wanden en kolommen",
+                  "Funderingsplaten op maat",
+                  "Betonnen wanden & kolommen",
                   "Gewapend betonconstructies",
-                  "Gepolierd beton",
-                  "Maatwerk betonoplossingen"
+                  "Gepolierde afwerkingen",
+                  "Beton voor infrastructurele werken"
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 size={18} className="text-accent shrink-0" />
-                    <span className="font-lexend text-xs uppercase tracking-wider font-bold">{item}</span>
+                    <span className="font-lexend text-[10px] uppercase tracking-wider font-bold text-anthracite">{item}</span>
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="bg-anthracite py-20 text-white">
+      <section className="bg-anthracite py-20 lg:py-32 text-white">
         <div className="section-container text-center">
-           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Bouw op een <span className="text-accent">Sterke Basis</span></h2>
-           <p className="max-w-2xl mx-auto text-white/60 mb-12">
-             Heeft u nood aan hoogwaardig betonwerk voor uw volgende project? Onze experts staan klaar om u te adviseren.
+           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Bouw op een <span className="text-accent">Zekere Basis</span></h2>
+           <p className="max-w-2xl mx-auto text-white/60 mb-12 text-lg">
+             Zoekt u een partner die technische uitdagingen omzet in solide oplossingen?
            </p>
            <Link href="/contact" className="btn-primary">
-             Vraag een Offerte Aan <ArrowRight size={18} className="ml-2" />
+             Vraag een technische analyse aan <ArrowRight size={18} className="ml-2" />
            </Link>
         </div>
       </section>

@@ -1,15 +1,15 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Briefcase, GraduationCap, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Briefcase, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 const jobs = [
   {
     title: "Ervaren Kraanman",
-    location: "Werven regio West-Vlaanderen",
+    location: "Regio West-Vlaanderen",
     type: "Voltijds",
-    desc: "Ben jij een ervaren kraanman die zelfstandig projecten kan coördineren? Wij zoeken een gedreven collega voor onze graafmachines."
+    desc: "Bedien jij onze machines met uiterste precisie? We zoeken een vakman die zelfstandig kan werken op diverse werven en passie heeft voor grondverzet."
   }
 ];
 
@@ -32,19 +32,19 @@ export default function VacaturesPage() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Careers</span>
-            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Bouw mee aan de Toekomst</h1>
+            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Bouw mee aan <br className="hidden md:block" /> Onze Projecten</h1>
           </motion.div>
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 lg:py-32">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center mb-20">
             <h2 className="text-3xl md:text-5xl uppercase tracking-tighter text-anthracite mb-8">
-              Word deel van ons <span className="text-accent">Team</span>
+              Passie voor de grond, <br className="hidden md:block" /> <span className="text-accent">Respect voor de mens</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Bij Verhulst grond- en betonwerken zijn we altijd op zoek naar gedreven talent om ons team te versterken. Wij bieden een no-nonsense werkomgeving met moderne machines en afwisselende werven.
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Bij Verhulst ben je geen nummer. We zijn een familiaal bedrijf waar we samen streven naar het beste resultaat. Je werkt met het modernste materieel op uitdagende werven in de regio.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export default function VacaturesPage() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-muted p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-l-8 border-accent"
+                className="bg-muted p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-l-8 border-accent shadow-sm"
               >
                 <div>
                   <div className="flex items-center gap-3 mb-4 text-accent">
@@ -63,14 +63,14 @@ export default function VacaturesPage() {
                     <span className="text-[10px] uppercase font-bold tracking-widest">{job.type}</span>
                   </div>
                   <h3 className="text-2xl md:text-3xl uppercase tracking-wider mb-2 font-bold">{job.title}</h3>
-                  <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
+                  <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4 font-medium">
                     <MapPin size={16} />
                     <span>{job.location}</span>
                   </div>
-                  <p className="text-muted-foreground text-sm max-w-xl">{job.desc}</p>
+                  <p className="text-muted-foreground text-sm max-w-xl leading-relaxed">{job.desc}</p>
                 </div>
                 <Link href="/contact" className="btn-primary shrink-0">
-                  Solliciteer Nu <ArrowRight size={18} className="ml-2" />
+                  Laten we kennismaken <ArrowRight size={18} className="ml-2" />
                 </Link>
               </motion.div>
             ))}
@@ -78,33 +78,40 @@ export default function VacaturesPage() {
         </div>
       </section>
 
-      <section className="bg-muted py-20">
+      <section className="bg-muted py-20 lg:py-32">
         <div className="section-container">
-           <h2 className="text-2xl md:text-4xl uppercase tracking-tighter text-anthracite mb-12 text-center">Wat wij <span className="text-accent">Bieden</span></h2>
+           <h2 className="text-2xl md:text-4xl uppercase tracking-tighter text-anthracite mb-12 text-center">Jouw <span className="text-accent">Voordelen</span></h2>
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { title: "Loon naar Ervaring", icon: <CheckCircle2 size={24} /> },
+                { title: "Correcte Verloning", icon: <CheckCircle2 size={24} /> },
                 { title: "Modern Machinepark", icon: <CheckCircle2 size={24} /> },
-                { title: "Werkzekerheid", icon: <CheckCircle2 size={24} /> },
-                { title: "Toffe Werksfeer", icon: <CheckCircle2 size={24} /> }
+                { title: "Werk in de Regio", icon: <CheckCircle2 size={24} /> },
+                { title: "Familiale Sfeer", icon: <CheckCircle2 size={24} /> }
               ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-4 bg-white p-6 rounded-sm shadow-sm">
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="flex items-center gap-4 bg-white p-6 rounded-sm shadow-sm border border-border"
+                >
                    <div className="text-accent">{item.icon}</div>
                    <span className="font-lexend text-xs font-bold uppercase tracking-wider">{item.title}</span>
-                </div>
+                </motion.div>
               ))}
            </div>
         </div>
       </section>
 
-      <section className="bg-anthracite py-20 text-white">
+      <section className="bg-anthracite py-20 lg:py-32 text-white">
         <div className="section-container text-center">
-           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Geen passende <span className="text-accent">Vacature?</span></h2>
-           <p className="max-w-2xl mx-auto text-white/60 mb-12">
-             Spontane sollicitaties zijn altijd welkom. Stuur ons je CV en we bekijken de mogelijkheden.
+           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Niet gevonden wat je <span className="text-accent">Zocht?</span></h2>
+           <p className="max-w-2xl mx-auto text-white/60 mb-12 text-lg">
+             We staan altijd open voor gemotiveerde mensen die van aanpakken weten.
            </p>
            <Link href="mailto:gregory@grondwerkenverhulst.be" className="btn-outline border-white text-white hover:bg-white hover:text-anthracite">
-             Stuur Open Sollicitatie
+             Stuur een Open Sollicitatie
            </Link>
         </div>
       </section>

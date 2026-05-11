@@ -12,7 +12,7 @@ export default function FunderingenPage() {
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
             src="https://www.grondwerkenverhulst.be/files/banner/1/8/afbeelding-van-whatsapp-op-2024-06-12-om-222840f5c58da5_d.jpg"
-            alt="Funderingen"
+            alt="Industriële Funderingen Verhulst"
             className="w-full h-full object-cover"
           />
         </div>
@@ -22,25 +22,30 @@ export default function FunderingenPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Expertise</span>
-            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Funderingen</h1>
+            <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Specialisatie</span>
+            <h1 className="text-4xl md:text-6xl text-white uppercase tracking-tighter">Industriële Funderingen</h1>
           </motion.div>
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 lg:py-32">
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
               <h2 className="text-3xl md:text-5xl uppercase tracking-tighter text-anthracite mb-8">
-                De Basis van elk <br /><span className="text-accent">Succesverhaal</span>
+                Solide Basis voor <br /><span className="text-accent">Uw Ambities</span>
               </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  De basis van elk succesvol bouwproject ligt in de fundering. Bij Verhulst begrijpen we dat structurele integriteit begint bij wat er onder het oppervlak zit. Wij zetten onze diepgaande expertise in om ervoor te zorgen dat uw bedrijfsgebouw op een onwankelbare basis staat.
+                  De fundering is het meest kritieke onderdeel van elk bouwwerk. Bij Verhulst hebben we ons gespecialiseerd in het realiseren van complexe funderingen voor industriële gebouwen en grootschalige constructies. Wij zorgen voor een onwankelbaar fundament waarop u met een gerust hart kunt bouwen.
                 </p>
                 <p>
-                  Wij werken met de nieuwste technologieën, waaronder gerobotiseerde total stations voor uiterst nauwkeurige uitzettingen, om een optimale fundering te garanderen die voldoet aan de strengste technische eisen.
+                  Onze aanpak kenmerkt zich door uiterste precisie. Door het gebruik van geavanceerde meetapparatuur, zoals Leica Total Stations, garanderen we dat elke ankerplaat en elke funderingsbalk exact volgens plan wordt geplaatst. In combinatie met ons modern machinepark resulteert dit in een efficiënte en foutloze uitvoering.
                 </p>
               </div>
 
@@ -48,38 +53,44 @@ export default function FunderingenPage() {
                 {[
                   "Funderingen voor bedrijfsgebouwen",
                   "Algemene funderingsplaten",
-                  "Sleuffunderingen",
+                  "Sleuf- en putfunderingen",
                   "Uitzetten met Leica Total Station",
-                  "Plaatsen van ankerplaten",
-                  "Funderingsbalken"
+                  "Plaatsen van ankerplaten & bouten",
+                  "Gewapende funderingsbalken"
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 size={18} className="text-accent shrink-0" />
-                    <span className="font-lexend text-xs uppercase tracking-wider font-bold">{item}</span>
+                    <span className="font-lexend text-[10px] uppercase tracking-wider font-bold text-anthracite">{item}</span>
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
-            <div className="bg-muted p-4">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="bg-muted p-4 shadow-sm"
+            >
                <img
                  src="https://www.grondwerkenverhulst.be/files/page/24/7/20240705091405.jpg"
-                 alt="Funderingswerken"
+                 alt="Funderingswerken in West-Vlaanderen"
                  className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
                />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="bg-anthracite py-20 text-white">
+      <section className="bg-anthracite py-20 lg:py-32 text-white">
         <div className="section-container text-center">
-           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Nauwkeurigheid is <span className="text-accent">Cruciaal</span></h2>
-           <p className="max-w-2xl mx-auto text-white/60 mb-12">
-             Wilt u zeker zijn van een solide basis voor uw constructie? Verhulst biedt de technische precisie die uw project verdient.
+           <h2 className="text-3xl md:text-5xl uppercase tracking-tighter mb-8">Precisie op het <span className="text-accent">Hoogste Niveau</span></h2>
+           <p className="max-w-2xl mx-auto text-white/60 mb-12 text-lg">
+             Wilt u de zekerheid van een perfect uitgevoerde fundering voor uw volgende project?
            </p>
            <Link href="/contact" className="btn-primary">
-             Praat met een Expert <ArrowRight size={18} className="ml-2" />
+             Vraag een technische analyse aan <ArrowRight size={18} className="ml-2" />
            </Link>
         </div>
       </section>

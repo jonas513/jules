@@ -8,22 +8,22 @@ import Link from 'next/link';
 const services = [
   {
     title: "Grondwerken",
-    description: "Van bouwrijp maken van terreinen tot complexe nivelleringswerken. Wij beschikken over het modernste materieel voor elk type terrein.",
+    description: "De ideale voorbereiding voor uw project. Wij verzorgen graafwerk en nivellering met uiterste precisie en lasergestuurd materieel.",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
   },
   {
     title: "Betonwerken",
-    description: "Gespecialiseerde betonconstructies voor industriële toepassingen. Wij garanderen structurele integriteit en een onberispelijke afwerking.",
+    description: "Hoogwaardige betonconstructies en industriële vloeren. Wij garanderen een structurele integriteit die de tand des tijds doorstaat.",
     image: "https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070&auto=format&fit=crop"
   },
   {
     title: "Funderingen",
-    description: "De basis van elk succesvol gebouw. Wij verzorgen funderingswerken voor grote bedrijfsgebouwen met uiterste precisie.",
+    description: "Een solide basis voor industriële ambities. Gespecialiseerd in complexe funderingsprojecten voor grootschalige bedrijfsgebouwen.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop"
   },
   {
     title: "Afbraakwerken",
-    description: "Gecontroleerde afbraak van constructies met oog voor veiligheid en milieubewuste recyclage van materialen.",
+    description: "Vakkundige en gecontroleerde afbraak. Wij maken ruimte voor uw nieuwe plannen met oog voor veiligheid en milieubewuste recyclage.",
     image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=2070&auto=format&fit=crop"
   }
 ];
@@ -31,18 +31,18 @@ const services = [
 const usps = [
   {
     icon: <Zap className="text-accent" size={32} />,
-    title: "Snelheid",
-    text: "Wij begrijpen dat tijd geld is in de bouwsector. Onze strakke planning garandeert een tijdige oplevering."
+    title: "Modern Machinepark",
+    text: "Wij beschikken over een eigen, modern wagenpark. Dit staat garant voor onafhankelijkheid en een efficiënte uitvoering van elk project."
   },
   {
     icon: <CheckCircle2 className="text-accent" size={32} />,
-    title: "Nauwkeurigheid",
-    text: "Door gebruik te maken van geavanceerde technologie en lasergestuurd materieel leveren we millimetermerk."
+    title: "Technische Precisie",
+    text: "Door gebruik te maken van gerobotiseerde total stations en lasersturing leveren we millimetermerk voor uw constructie."
   },
   {
     icon: <ShieldCheck className="text-accent" size={32} />,
-    title: "Betrouwbaarheid",
-    text: "Jarenlange ervaring en een transparante werkwijze maken ons de partner bij uitstek voor uw project."
+    title: "Familiaal Karakter",
+    text: "Bij ons bent u geen nummer. We bieden eerlijk advies, korte communicatielijnen en een persoonlijke aanpak van begin tot eind."
   }
 ];
 
@@ -56,15 +56,15 @@ export default function Home() {
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Welkom bij Verhulst</span>
+              <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Vakmanschap & Visie</span>
               <h2 className="text-4xl md:text-6xl uppercase tracking-tighter text-anthracite leading-none mb-8">
-                Uw Partner in <br /> <span className="text-accent">Infrastructuur</span>
+                Solide Fundamenten voor <br /> <span className="text-accent">Uw Bouwproject</span>
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Bij Verhulst grond- en betonwerken staan wij garant voor snelheid, nauwkeurigheid en flexibiliteit. Wij zijn gespecialiseerd in het leggen van sterke fundamenten voor de toekomst, met een bijzondere focus op industriële bouwprojecten.
+                Bij Verhulst grond- en betonwerken bouwen we op een fundament van jarenlange ervaring. Wij zijn uw partner voor complexe infrastructuurprojecten in West-Vlaanderen, met een onwrikbare focus op kwaliteit, snelheid en technische vakkundigheid.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-                {['Maatwerkoplossingen', 'Innovatieve Technologie', 'Deskundig Team', 'Gecertificeerde Kwaliteit'].map((item) => (
+                {['Modern Machinepark', 'Eigen Vakkrachten', 'Persoonlijk Advies', 'Technische Analyse'].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-accent/10 rounded-full flex items-center justify-center">
                       <div className="w-2 h-2 bg-accent rounded-full" />
@@ -73,20 +73,20 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <Link href="#contact" className="btn-outline group">
-                Ontdek Onze Aanpak
+              <Link href="/over-ons" className="btn-outline group">
+                Ontdek Onze Identiteit
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
             <div className="relative">
-               <div className="aspect-square bg-muted relative overflow-hidden">
+               <div className="aspect-square bg-muted relative overflow-hidden shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1531834351336-787595d03328?q=80&w=2071&auto=format&fit=crop"
-                    alt="Verhulst in actie"
+                    alt="Verhulst Grondwerken in actie"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
                </div>
-               <div className="absolute -bottom-10 -left-10 bg-anthracite p-10 hidden md:block">
+               <div className="absolute -bottom-10 -left-10 bg-anthracite p-10 hidden md:block shadow-xl">
                   <span className="text-accent text-5xl font-bold block mb-2">15+</span>
                   <span className="text-white text-xs uppercase tracking-widest font-bold">Jaar Ervaring <br /> in de Sector</span>
                </div>
@@ -96,22 +96,22 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="diensten" className="bg-anthracite py-24">
+      <section id="diensten" className="bg-anthracite py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8">
             <div className="max-w-2xl">
               <span className="text-accent font-lexend text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Onze Expertise</span>
               <h2 className="text-4xl md:text-6xl uppercase tracking-tighter text-white leading-none">
-                Gespecialiseerde <br /> <span className="text-accent">Diensten</span>
+                Technische <br /> <span className="text-accent">Oplossingen</span>
               </h2>
             </div>
             <p className="text-white/60 max-w-sm text-sm">
-              Van de eerste spade in de grond tot de laatste betonstort, wij bieden een totaaloplossing voor uw bouwproject.
+              Van de eerste voorbereidende grondwerken tot de finale betonafwerking: wij bieden de technische expertise die uw project vereist.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-y border-white/10">
           {services.map((service, idx) => (
             <ServiceCard
               key={service.title}
@@ -123,18 +123,18 @@ export default function Home() {
       </section>
 
       {/* USPs Section */}
-      <section className="bg-white">
+      <section className="bg-white py-24 lg:py-32">
         <div className="section-container">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
               {usps.map((usp, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
-                  <div className="mb-6 p-6 bg-muted rounded-full group hover:bg-accent transition-colors duration-500">
+                  <div className="mb-8 p-8 bg-muted rounded-full group hover:bg-accent transition-colors duration-500">
                     <div className="group-hover:text-white transition-colors duration-500">
                       {usp.icon}
                     </div>
                   </div>
-                  <h3 className="text-xl uppercase tracking-wider mb-4">{usp.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{usp.text}</p>
+                  <h3 className="text-xl uppercase tracking-wider mb-4 font-bold">{usp.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">{usp.text}</p>
                 </div>
               ))}
            </div>
