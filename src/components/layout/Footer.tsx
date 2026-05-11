@@ -31,6 +31,7 @@ export default function Footer() {
               { name: 'Betonwerken', href: '/diensten/betonwerken' },
               { name: 'Funderingen', href: '/diensten/funderingen' },
               { name: 'Afbraakwerken', href: '/diensten/afbraakwerken' },
+              { name: 'Klinkerwerken', href: '/diensten/klinkerwerken' },
               { name: 'Containerverhuur', href: '/diensten/containerverhuur' }
             ].map((item) => (
               <li key={item.name}>

@@ -25,6 +25,11 @@ const services = [
     title: "Afbraakwerken",
     description: "Vakkundige en gecontroleerde afbraak. Wij maken ruimte voor uw nieuwe plannen met oog voor veiligheid en milieubewuste recyclage.",
     image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    title: "Klinkerwerken",
+    description: "Duurzame bestrating en terreininrichting. Wij zorgen voor een vakkundige aanleg van opritten, parkings en bedrijfsterreinen.",
+    image: "https://images.unsplash.com/photo-1590059132218-10300bf5ec27?q=80&w=2070&auto=format&fit=crop"
   }
 ];
 
@@ -111,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-y border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border-y border-white/10">
           {services.map((service, idx) => (
             <ServiceCard
               key={service.title}

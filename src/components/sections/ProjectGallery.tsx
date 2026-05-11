@@ -8,7 +8,7 @@ const projects = [
     title: "Govar Waregem",
     discipline: "Grondverzet & Nivellering",
     location: "Waregem",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop",
+    image: "/projects/project-1.jpg",
     size: "large"
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     title: "Lutosa",
     discipline: "Industriële Funderingen",
     location: "Leuze-en-Hainaut",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop",
+    image: "/projects/project-2.jpg",
     size: "small"
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     title: "Myldes Menen",
     discipline: "Betonwerken & Infrastructuur",
     location: "Menen",
-    image: "https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070&auto=format&fit=crop",
+    image: "/projects/project-3.jpg",
     size: "small"
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: "Beeuwsaert Ledegem",
     discipline: "Funderingen & Grondwerken",
     location: "Ledegem",
-    image: "https://images.unsplash.com/photo-1531834351336-787595d03328?q=80&w=2071&auto=format&fit=crop",
+    image: "/projects/project-4.jpg",
     size: "large"
   },
   {

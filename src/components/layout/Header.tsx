@@ -15,6 +15,7 @@ const navLinks = [
       { name: 'Betonwerken', href: '/diensten/betonwerken' },
       { name: 'Funderingen', href: '/diensten/funderingen' },
       { name: 'Afbraakwerken', href: '/diensten/afbraakwerken' },
+      { name: 'Klinkerwerken', href: '/diensten/klinkerwerken' },
       { name: 'Containerverhuur', href: '/diensten/containerverhuur' },
     ]
   },
@@ -46,7 +47,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-4">
           <img
-            src={isScrolled ? "/logo.png" : "/logo-white.png"}
+            src={isScrolled ? "/logo-black.png" : "/logo-white.png"}
             alt="Verhulst Grond- en Betonwerken"
             className="h-10 md:h-12 w-auto object-contain"
           />
