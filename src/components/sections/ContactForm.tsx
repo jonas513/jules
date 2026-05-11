@@ -111,6 +111,8 @@ export default function ContactForm() {
                   <option value="grondwerken">Grondwerken</option>
                   <option value="betonwerken">Betonwerken</option>
                   <option value="funderingen">Funderingen</option>
+                  <option value="afbraak">Afbraakwerken</option>
+                  <option value="container">Containerverhuur</option>
                   <option value="andere">Andere</option>
                 </select>
                 {errors.service && <p className="text-red-500 text-[10px] uppercase">{errors.service.message}</p>}

@@ -19,7 +19,7 @@ export default function Footer() {
             Gespecialiseerd in grond- en betonwerken met een focus op snelheid, nauwkeurigheid en innovatieve technologie. Uw partner voor grootschalige funderingsprojecten.
           </p>
           <div className="flex gap-4">
-            <Link href="https://linkedin.com" className="bg-white/10 p-2 rounded-sm hover:bg-accent transition-colors">
+            <Link href="https://www.linkedin.com/company/verhulst-grond-en-betonwerken/" className="bg-white/10 p-2 rounded-sm hover:bg-accent transition-colors">
               <Linkedin size={20} />
             </Link>
           </div>
@@ -28,11 +28,17 @@ export default function Footer() {
         <div>
           <h4 className="font-lexend font-bold text-lg uppercase tracking-wider mb-6">Expertise</h4>
           <ul className="space-y-4">
-            {['Grondwerken', 'Betonwerken', 'Funderingen', 'Afbraakwerken', 'Containerverhuur'].map((item) => (
-              <li key={item}>
-                <Link href="#diensten" className="text-white/60 hover:text-accent flex items-center gap-2 group transition-colors">
+            {[
+              { name: 'Grondwerken', href: '/diensten/grondwerken' },
+              { name: 'Betonwerken', href: '/diensten/betonwerken' },
+              { name: 'Funderingen', href: '/diensten/funderingen' },
+              { name: 'Afbraakwerken', href: '/diensten/afbraakwerken' },
+              { name: 'Containerverhuur', href: '/diensten/containerverhuur' }
+            ].map((item) => (
+              <li key={item.name}>
+                <Link href={item.href} className="text-white/60 hover:text-accent flex items-center gap-2 group transition-colors">
                   <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                  {item}
+                  {item.name}
                 </Link>
               </li>
             ))}
@@ -62,18 +68,22 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-lexend font-bold text-lg uppercase tracking-wider mb-6">Nieuwsbrief</h4>
-          <p className="text-white/60 text-sm mb-4">Blijf op de hoogte van onze nieuwste projecten en innovaties.</p>
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="E-mailadres"
-              className="bg-white/5 border border-white/10 px-4 py-3 text-sm focus:outline-none focus:border-accent w-full"
-            />
-            <button className="bg-accent px-4 py-3 hover:bg-opacity-90 transition-colors">
-              <ArrowRight size={20} />
-            </button>
-          </form>
+          <h4 className="font-lexend font-bold text-lg uppercase tracking-wider mb-6">Navigatie</h4>
+          <ul className="space-y-4">
+            {[
+              { name: 'Home', href: '/' },
+              { name: 'Over Ons', href: '/over-ons' },
+              { name: 'Vacatures', href: '/vacatures' },
+              { name: 'Contact', href: '/contact' }
+            ].map((item) => (
+              <li key={item.name}>
+                <Link href={item.href} className="text-white/60 hover:text-accent flex items-center gap-2 group transition-colors">
+                  <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
