@@ -11,7 +11,7 @@ export default function ContainerverhuurPage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070&auto=format&fit=crop"
+            src="/projects/project-4.jpg"
             alt="Containerverhuur Verhulst"
             className="w-full h-full object-cover"
           />

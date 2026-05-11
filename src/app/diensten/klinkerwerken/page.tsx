@@ -11,7 +11,7 @@ export default function KlinkerwerkenPage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1590059132218-10300bf5ec27?q=80&w=2070&auto=format&fit=crop"
+            src="/images/verhulst-grondwerken-werf.jpg"
             alt="Klinkerwerken Verhulst"
             className="w-full h-full object-cover"
           />
@@ -74,7 +74,7 @@ export default function KlinkerwerkenPage() {
               className="bg-muted p-4 shadow-sm"
             >
                <img
-                 src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
+                 src="/projects/project-2.jpg"
                  alt="Bestrating Verhulst"
                  className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
                />

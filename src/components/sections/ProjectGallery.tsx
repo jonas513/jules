@@ -40,7 +40,7 @@ const projects = [
     title: "Altez Kortrijk",
     discipline: "Grond- en Betonwerken",
     location: "Kortrijk",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/verhulst-betonwerken-werf.jpg",
     size: "small"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     title: "Verelst Oostakker",
     discipline: "Industriële Afbraakwerken",
     location: "Oostakker",
-    image: "https://images.unsplash.com/photo-1541976535096-2855664bc869?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/verhulst-grondwerken-werf.jpg",
     size: "small"
   },
 ];
@@ -90,7 +90,8 @@ export default function ProjectGallery() {
                 project.size === 'large' ? 'md:col-span-2' : ''
               }`}
             >
-              <div className="aspect-[16/10] md:aspect-video relative">
+              <div className="aspect-[16/10] md:aspect-video" />
+              <div className="absolute inset-0">
                 <img
                   src={project.image}
                   alt={`${project.discipline} - ${project.title}`}

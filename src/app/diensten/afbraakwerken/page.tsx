@@ -11,7 +11,7 @@ export default function AfbraakwerkenPage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=2070&auto=format&fit=crop"
+            src="/images/verhulst-betonwerken-werf.jpg"
             alt="Afbraakwerken Verhulst"
             className="w-full h-full object-cover"
           />
@@ -39,7 +39,7 @@ export default function AfbraakwerkenPage() {
               className="order-2 lg:order-1 bg-muted p-4 shadow-sm"
             >
                <img
-                 src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
+                 src="/projects/project-3.jpg"
                  alt="Afbraakwerken uitvoering"
                  className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
                />

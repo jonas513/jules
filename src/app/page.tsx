@@ -9,12 +9,12 @@ const services = [
   {
     title: "Grondwerken",
     description: "De ideale voorbereiding voor uw project. Wij verzorgen graafwerk en nivellering met uiterste precisie en lasergestuurd materieel.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
+    image: "/projects/project-2.jpg"
   },
   {
     title: "Betonwerken",
     description: "Hoogwaardige betonconstructies en industriële vloeren. Wij garanderen een structurele integriteit die de tand des tijds doorstaat.",
-    image: "https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=2070&auto=format&fit=crop"
+    image: "/projects/project-1.jpg"
   },
   {
     title: "Funderingen",
@@ -24,12 +24,12 @@ const services = [
   {
     title: "Afbraakwerken",
     description: "Vakkundige en gecontroleerde afbraak. Wij maken ruimte voor uw nieuwe plannen met oog voor veiligheid en milieubewuste recyclage.",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/verhulst-betonwerken-werf.jpg"
   },
   {
     title: "Klinkerwerken",
     description: "Duurzame bestrating en terreininrichting. Wij zorgen voor een vakkundige aanleg van opritten, parkings en bedrijfsterreinen.",
-    image: "https://images.unsplash.com/photo-1590059132218-10300bf5ec27?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/verhulst-grondwerken-werf.jpg"
   }
 ];
 
@@ -86,7 +86,7 @@ export default function Home() {
             <div className="relative">
                <div className="aspect-square bg-muted relative overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1531834351336-787595d03328?q=80&w=2071&auto=format&fit=crop"
+                    src="/images/verhulst-funderingen-werf.jpg"
                     alt="Verhulst Grondwerken in actie"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />

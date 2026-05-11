@@ -20,7 +20,7 @@ export default function VacaturesPage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
+            src="/projects/project-3.jpg"
             alt="Werken bij Verhulst"
             className="w-full h-full object-cover"
           />

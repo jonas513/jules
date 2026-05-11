@@ -14,7 +14,7 @@ export default function Hero() {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5 }}
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop"
+          src="/projects/project-1.jpg"
           alt="Construction Site"
           className="w-full h-full object-cover"
         />
